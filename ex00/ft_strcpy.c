@@ -6,7 +6,7 @@
 /*   By: nmokgawa <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/26 14:14:40 by nmokgawa          #+#    #+#             */
-/*   Updated: 2020/06/26 14:15:01 by nmokgawa         ###   ########.fr       */
+/*   Updated: 2020/06/26 14:27:09 by nmokgawa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,13 +38,4 @@ char *ft_strcpy(char *dest, char *src);
 	dest[1] = '\0';
 	return(dest);
 }
-char *ft_strncpy(char *dest, const char *src, char n)
-{
-   int i;
 
-   for (i = 0; i < n && src[i] != '\0'; i++)
-        dest[i] = src[i];
-    for ( ; i < n; i++)
-        dest[i] = '\0';
-
-   return dest;
